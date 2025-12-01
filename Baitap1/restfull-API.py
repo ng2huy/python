@@ -14,21 +14,22 @@ key_name = input("Input product name to search (or press Enter to show all): ")
 data = key (key_name)
 
 print("------------List of products:------------")
-count = 0
+#count = 0
+id_temp = []
 for i in data:
     print(f"{i['id']} - {i['name']}")
-    count += 1
+    id_temp.append(int(i['id']))
+    #count += 1
 #print(f"Total products: {count}")
 
 while True:
     user_input = input("Input product ID to see details: ")
     if user_input.isdigit(): #check if input is a number
         product_id = int(user_input)
-        for i in data:
-            if 2 == 2 :
-                break
-            else:
-                print("Invalid product ID. Please enter a number of the list above.")
+        if product_id in id_temp:
+            break
+        else:
+            print("Invalid product ID. Please enter a number of the list above.")
     else:
         print("Please enter a valid number.")
 
