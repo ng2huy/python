@@ -17,3 +17,4 @@ btn = tk.Button(root, text="Get Computer Name", command=show_computer_name)
 btn.pack(pady=30)
 
 root.mainloop()
+# Get and show computer name as a popup
