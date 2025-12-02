@@ -1,0 +1,4 @@
+PS D:\Data_huy\soft\Study Python\python> cd "D:\Data_huy\soft\python"
+PS D:\Data_huy\soft\python> python -m venv .venv
+PS D:\Data_huy\soft\python> .venv\Scripts\Activate
+(.venv) PS D:\Data_huy\soft\python> 
